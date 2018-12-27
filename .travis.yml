@@ -1,0 +1,18 @@
+#
+#  .travis.yml
+#  Task
+#
+#  Created by Prachi Gauriar on 12/26/2018.
+#  Copyright © 2018 Prachi Gauriar. All rights reserved.
+#
+
+os: osx
+osx_image: xcode10.1
+language: swift
+xcode_workspace: Task.xcworkspace
+
+matrix:
+  include:
+  - name: macOS
+    xcode_scheme: Task
+    xcode_destination: platform=macOS

@@ -40,7 +40,7 @@
 
 + (instancetype)messageCountingProxyWithObject:(NSObject *)object
 {
-    return [[self alloc] initWithObject:object];
+    return [[UMKMessageCountingProxy alloc] initWithObject:object];
 }
 
 
